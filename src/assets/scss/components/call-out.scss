@@ -1,0 +1,112 @@
+.call-out {
+    color: $color-red;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+
+    &__text {
+        animation-timing-function: ease-in;
+        width: 90vw;
+
+        path {
+            fill: $color-red;
+            opacity: 0;
+            
+            .is-loaded & {
+                animation: fadeInUp 1800ms forwards;
+
+                &#heart {
+                    animation: fadeInUpDelay 1800ms forwards;   
+                }
+            }
+
+            // Set delay for every letter
+            @for $i from 1 through 9 {
+                &:nth-child(#{$i}n) {
+                    animation-delay: #{$i * 50}ms;
+                }
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUpDelay {
+            0% {
+                fill: $color-red;
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            90% {
+                fill: $color-red;
+                opacity: 1;
+                transform: translateY(0);
+            }
+            91% {
+                fill: $color-blue;
+                transform: translateX(-15px);
+            }
+            92% {
+                fill: $color-blue;
+                transform: translateX(-15px);
+            }
+            94% {
+                fill: $color-red;
+                transform: translateY(0);
+            }
+            100% {
+                fill: $color-red;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &__intro {
+        margin-bottom: 1rem;
+        position: relative;
+        width: fit-content;
+
+        &::after {
+            background-color: #fff;
+            bottom: -25%;
+            content: '';
+            height: 50%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+
+        span {
+            display: block;
+
+            .is-loaded & {
+                animation: fadeUp 1200ms forwards linear;
+            }
+
+            @keyframes fadeUp {
+                0% {
+                    opacity: 1;
+                    transform: translateY(28px);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+
+    @include bp(1024px) {
+        &__text {
+            width: 950px;
+        }
+	}
+}

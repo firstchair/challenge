@@ -1,0 +1,36 @@
+.revealer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+    width: 100%;
+    
+    &__bar-wrapper {
+        height: 60%;
+        position: relative;
+
+        &:first-of-type {
+            height: 40%;
+        }
+
+        .hero__background & {
+            height: 80%;
+
+            &:first-of-type {
+                height: 20%;
+            }
+        }
+    }
+
+    &__bar {
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}

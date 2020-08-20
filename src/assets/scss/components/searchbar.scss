@@ -1,0 +1,41 @@
+.searchbar {
+	&__form {
+		display: flex;
+	} 
+
+	&__input {
+		border: 1px solid $color-grey;
+		font-family: $font-helvetica;
+		font-size: .8rem;
+		line-height: normal;
+		outline: none;
+		padding: .2rem .4rem;
+		width: 100%;
+
+		&::placeholder {
+			color: $color-grey;
+		}
+	}
+
+	&__button {
+		align-items: center;
+        background-color: transparent;
+		border: none;
+		cursor: pointer;
+		display: flex;
+		
+		&:hover,
+		&:focus {
+			.searchbar__icon {
+				fill: $color-blue;
+			}
+		}
+    }
+    
+    &__icon {
+		fill: $color-blue-light;
+		height: 20px;
+		transition: fill 200ms;
+		width: 20px;
+	}
+}

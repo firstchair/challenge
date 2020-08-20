@@ -1,0 +1,41 @@
+///* ========================================================================
+//   FONTS
+//   ======================================================================== */
+
+// Weights
+$weight-medium: 400;
+$weight-bold: 600;
+$weight-heavy: 800;
+$weight-black: 900;
+
+// Fonts
+$font-helvetica: 'Helvetica', 'Arial', sans-serif !default;
+$font-heroic: 'Heroic Condensed', sans-serif;
+
+@font-face {
+  font-family: 'Heroic Condensed';
+  font-style: normal;
+  font-weight: $weight-medium;
+  src: local('Heroic Condensed'), local('Heroic Condensed Medium'), url('../fonts/heroiccondensed-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/heroiccondensed-medium-webfont.woff') format('woff'), url('../fonts/heroiccondensed-medium-webfont.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Heroic Condensed';
+  font-style: normal;
+  font-weight: $weight-bold;
+  src: url('../fonts/heroiccondensed-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/heroiccondensed-bold-webfont.woff') format('woff'), url('../fonts/heroiccondensed-bold-webfont.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Heroic Condensed';
+  font-style: normal;
+  font-weight: $weight-heavy;
+  src: url('../fonts/heroiccondensed-heavy-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/heroiccondensed-heavy-webfont.woff') format('woff'), url('../fonts/heroiccondensed-heavy-webfont.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Heroic Condensed';
+  font-style: normal;
+  font-weight: $weight-black;
+  src: url('../fonts/heroiccondensed-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/heroiccondensed-black-webfont.woff') format('woff'), url('../fonts/heroiccondensed-black-webfont.ttf') format('ttf'), url('../fonts/heroiccondensed-black-webfont.svg#HeroicCondensedBlack') format('svg');
+}

@@ -1,0 +1,28 @@
+.basket {
+    &__link {
+        position: relative;
+
+        &:hover,
+        &:focus {
+            .basket__icon {
+                fill: $color-blue
+            }
+        }
+    }
+
+    &__icon {
+        fill: $color-blue-light;
+        height: 100%; 
+        transition: fill 200ms;
+        width: 22px;
+    }
+
+    &__count {
+        bottom: 7px;
+        color: $color-white;
+        font-size: .8rem;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+}

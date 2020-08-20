@@ -1,0 +1,9 @@
+# Misc
+.DS_Store
+.history/
+.idea/
+.vscode/
+var/
+node_modules/
+
+dist/*
