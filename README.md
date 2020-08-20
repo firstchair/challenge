@@ -1,8 +1,14 @@
 ### Superhero Cheesecake
 
+## Installation:
+- Run 'yarn install'
+- Run 'yarn run dev'
+
 ## TODO's ⛏️
 - Image masking letters
 - Video pause? Interaction?
+
+
 
 ##### Frontend Recruitment Challenge -- Tommy Hilfiger - Denim Landing
 
